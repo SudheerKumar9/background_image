@@ -5,27 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background Image</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
     <style>
         body
         {
-            background-image: url('{% static "images/prabhas3.jpeg" %}');
+            background-image: url("{% static 'images/prabhas2.webp' %}");
+            background-repeat:no-repeat;
+            background-size: cover;
+    
+        }
+        h1
+        {
+            color:dodgerblue;
+            text-align: center;
         }
     </style>
+    
 </head>
 <body>
-        <h1>conecting bg-images to jquery</h1>
-        <!--<h1 style="background-image: url('{% static "images/msd.jpg" %}');">Back Ground U have One Image</h1>
+    <h1>Back Ground U have One Image</h1>
        
        
-    <h1 style="background-image: url('{% static "images/mi.jpg" %}');">Back Ground U have One Image</h1>
-        <h2>connect to static img</h2>  -->
+    <!--<h1 style="background-image: url('{% static "images/mi.jpg" %}');">Back Ground U have One Image</h1>
+    <h2>connect to static img</h2>  -->
         
 
-        <script src="{% static 'js/jquery.js' %}"></script>
-        <script src="{% static 'js/popper.js' %}"></script>
-        <script src="{% static 'js/bootstrap.js' %}"></script>
-        <script src="{% static 'js/mdb.js' %}"></script>
-    
+   
 </body>
 </html>
